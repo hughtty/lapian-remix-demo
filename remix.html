@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>套用实战 · 一张打法卡，两部剧，两条成片</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .dram{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .dcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .dcard h3{font-size:15px;margin-bottom:2px}
+  .dcard .sub{font-size:12px;color:var(--mut);margin-bottom:10px}
+  .kf{display:flex;gap:5px;margin:10px 0;flex-wrap:wrap}
+  .kf img{height:74px;border-radius:6px}
+  .stats{display:flex;gap:14px;font-size:12px;color:var(--sub);flex-wrap:wrap;margin-bottom:4px}
+  .stats b{color:var(--acc)}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--sub);font-weight:500;font-size:12px;white-space:nowrap}
+  .st{white-space:nowrap;font-weight:600}
+  .st.hit{color:var(--acc)}.st.rep{color:var(--warn)}.st.miss{color:var(--bad)}
+  .cutgrid{display:grid;grid-template-columns:300px 1fr;gap:18px;align-items:start;margin-top:8px}
+  .cutgrid video{width:100%;border-radius:14px;background:#000}
+  .seg{display:flex;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+  .seg:last-child{border-bottom:none}
+  .seg .t{font-family:ui-monospace,monospace;color:var(--acc);font-size:12px;flex:none;width:74px}
+  .seg img{height:52px;border-radius:5px;flex:none}
+  .seg .why{color:var(--sub);font-size:12px}
+  .seg .rl{color:var(--txt);flex:none;font-weight:600;font-size:12px;width:56px}
+  .cert2{border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12px;color:var(--sub);margin-top:10px}
+  .anchor{scroll-margin-top:80px}
+  @media(max-width:900px){.dram{grid-template-columns:1fr}.cutgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="dot"></span>拉片复刻</a>
+  <a href="index.html">首页</a>
+  <a href="case/a13.html">爆款拉片</a>
+  <a href="remix.html" class="on">套用实战</a>
+  <a href="pipeline.html">流程说明</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="hero" style="padding-bottom:0">
+    <span class="badge">套用实战</span>
+    <h1>拿两部剧，真跑这张打法卡</h1>
+    <p>流程：先把两部原片各自解析一遍 → 拿打法卡逐条对照（命中/替代/缺失当场标清）→ 剪辑师确认后剪出成片。<br>以下所有画面都来自原剧真实片段，保留原声。</p>
+  </div>
+
+  <div class="panel" style="margin-top:20px">
+    <h2>第一步 · 原片解析</h2>
+    <div class="dram">
+      <div class="dcard">
+        <h3>剧一《宝塔空间》· 穿越种田剧</h3>
+        <div class="sub">3 段素材 · 讲述现代青年车祸穿越 60 年代、身怀宝塔空间金手指</div>
+        <div class="stats"><span>总时长 <b>249s</b></span><span>切镜 <b>286</b></span><span>平均镜头 <b>0.87s</b></span><span>解说字幕 <b>自带</b></span></div>
+        <div class="kf"><img src="keyframes/b1/t01.jpg"><img src="keyframes/b1/t11.jpg"><img src="keyframes/b1/t24.jpg"><img src="keyframes/b1/t34.jpg"><img src="keyframes/b1/t45.jpg"><img src="keyframes/b1/t55.jpg"><img src="keyframes/b1/t65.jpg"><img src="keyframes/b1/t75.jpg"></div>
+        <div style="font-size:12px;color:var(--mut)">解析方式：整片切镜清点 + 逐段抽帧标注（场景/人物/情绪），为对照做准备。</div>
+      </div>
+      <div class="dcard">
+        <h3>剧二《多玛谷》· 高原货运枪战剧</h3>
+        <div class="sub">2 段素材 · 讲述货运夫妻接单入藏，误入盗猎者黑吃黑局</div>
+        <div class="stats"><span>总时长 <b>334s</b></span><span>切镜 <b>340</b></span><span>平均镜头 <b>0.94s</b></span><span>解说字幕 <b>自带</b></span></div>
+        <div class="kf"><img src="keyframes/b2/t02.jpg"><img src="keyframes/b2/t15.jpg"><img src="keyframes/b2/t30.jpg"><img src="keyframes/b2/t45.jpg"><img src="keyframes/b2/t58.jpg"><img src="keyframes/b2/t70.jpg"><img src="keyframes/b2/t82.jpg"><img src="keyframes/b2/t95.jpg"></div>
+        <div style="font-size:12px;color:var(--mut)">解析方式：同上。两部原片节奏都快于打法卡模板的 1.6s，按"就快节奏"处理。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>第二步 · 对照打法卡（咖妃卡 6 要素）</h2>
+    <table>
+      <tr><th>打法卡要素</th><th>剧一判定</th><th>剧二判定</th></tr>
+      <tr><td>① 钩子三段式：1 秒立预期 → 硬切反转 → 5 秒解释</td>
+        <td><span class="st hit">命中</span><br><span style="color:var(--mut);font-size:12px">过马路是预期 → 第 3 秒车祸穿越 → "同名同姓+宝塔记忆"解释</span></td>
+        <td><span class="st hit">命中</span><br><span style="color:var(--mut);font-size:12px">夫妻卧谈是预期 → 接单"三个条件" → 盗猎者"尸体往峡谷一推"威胁反转</span></td></tr>
+      <tr><td>② 平均 1.6s 节奏 + 特写优先</td><td><span class="st hit">命中</span><br><span style="color:var(--mut);font-size:12px">原片 0.87s，就快节奏</span></td><td><span class="st hit">命中</span><br><span style="color:var(--mut);font-size:12px">原片 0.94s</span></td></tr>
+      <tr><td>③ 全程解说字幕</td><td><span class="st hit">命中</span></td><td><span class="st hit">命中</span></td></tr>
+      <tr><td>④ 悬念卡点收尾</td>
+        <td><span class="st rep">替代→省略</span><br><span style="color:var(--mut);font-size:12px">素材收束为亲情喝粥；九层疑问位于故事中前段，置尾将倒置B因果——按保留因果规则省略并记录于 matches.json</span></td>
+        <td><span class="st hit">命中</span><br><span style="color:var(--mut);font-size:12px">素材结尾即伏击爆发，天然卡点</span></td></tr>
+      <tr><td>⑤ 4–8 分钟时长</td><td><span class="st rep">部分适配</span><br><span style="color:var(--mut);font-size:12px">素材共 249s，先出 80s 试剪验证</span></td><td><span class="st rep">部分适配</span><br><span style="color:var(--mut);font-size:12px">素材共 334s，先出 108s 试剪验证</span></td></tr>
+      <tr><td>⑥ "一秒可视"的反差人设</td>
+        <td><span class="st rep">替代</span><br><span style="color:var(--mut);font-size:12px">黑皮喜剧人设 → 换成"穿越+金手指到账"，同为秒懂反差</span></td>
+        <td><span class="st rep">替代</span><br><span style="color:var(--mut);font-size:12px">换成"文明生意 vs 黑吃黑"，情绪由喜转危，属降级替代</span></td></tr>
+    </table>
+    <div style="font-size:12px;color:var(--mut)">规则：替代与缺失必须明说，宁缺毋滥，不硬凑。剧二第⑥条就是降级替代的实例。</div>
+  </div>
+
+  <div class="panel anchor" id="b1">
+    <h2>第三步 · 成片一《宝塔空间》 3分10秒（技能管线版）</h2>
+      <div class="cutgrid">
+      <video src="videos/b1-cut.mp4" controls playsinline></video>
+      <div>
+        <div class="seg"><span class="t">00–08s</span><img src="keyframes/b1/k1.jpg"><span class="rl">钩子</span><span class="why">自述+过马路立预期，第3秒车祸硬切穿越</span></div>
+        <div class="seg"><span class="t">08–16s</span><img src="keyframes/b1/k2.jpg"><span class="rl">苏醒</span><span class="why">土炕睁眼坐起→冰河淹死回忆（B自身正叙）</span></div>
+        <div class="seg"><span class="t">16–31s</span><img src="keyframes/b1/k3.jpg"><span class="rl">解释</span><span class="why">融合记忆“脑子里多了座宝塔”→出院子“金手指到账”</span></div>
+        <div class="seg"><span class="t">31–56s</span><img src="keyframes/b1/k4.jpg"><span class="rl">亲情锚</span><span class="why">母亲扑炕痛哭→九姐自责“让你下河捞鱼”（B原片顺序）</span></div>
+        <div class="seg"><span class="t">56–71s</span><img src="keyframes/b1/k5.jpg"><span class="rl">轻喜</span><span class="why">换衣避嫌“你是妈身上掉下来的肉”→母姐出门</span></div>
+        <div class="seg"><span class="t">71–124s</span><img src="keyframes/b1/k6.jpg"><span class="rl">金手指</span><span class="why">进空间：药田瀑布→喝灵泉水→“还有二层三层直到九层/楼梯在哪”</span></div>
+        <div class="seg"><span class="t">124–165s</span><img src="keyframes/b1/k7.jpg"><span class="rl">逆袭</span><span class="why">出空间在家没种子→挖枸杞树得活根→种入宝塔→“作弊神器”</span></div>
+        <div class="seg"><span class="t">165–190s</span><img src="keyframes/b1/k8.jpg"><span class="rl">收束</span><span class="why">回家喝粥“咱们一起喝/你赶紧吃吧”——B自身亲情收束</span></div>
+        <div class="cert2">本版由技能管线渲染：edit-plan 通过 check-plan（源文件hash/时长/证据节点/片段包含全验证）→ render 顺序截取+保留原声 → qa 完整解码与时长容差通过。卡点要素按“保留B因果顺序”规则省略并记录于 matches.json。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel anchor" id="b2">
+    <h2>第三步 · 成片二《多玛谷》 2分13秒（技能管线版）</h2>
+    <div class="cutgrid">
+      <video src="videos/b2-cut.mp4" controls playsinline></video>
+      <div>
+        <div class="seg"><span class="t">00–12s</span><img src="keyframes/b2/k1.jpg"><span class="rl">立预期</span><span class="why">卡车日出+夫妻卧谈“跟了大川半年了”</span></div>
+        <div class="seg"><span class="t">12–30s</span><img src="keyframes/b2/k2.jpg"><span class="rl">信息钩</span><span class="why">电话接单“答应我三个条件/报酬绝对让你满意”</span></div>
+        <div class="seg"><span class="t">30–54s</span><img src="keyframes/b2/k3.jpg"><span class="rl">入险</span><span class="why">破厂房验货点钞“皮料和羊绒是大肥肉/金钱的味道”</span></div>
+        <div class="seg"><span class="t">54–84s</span><img src="keyframes/b2/k4.jpg"><span class="rl">威胁</span><span class="why">盗猎者目送+密谋“那个叫阿娅的女人/联系格桑/尸体往峡谷一推”</span></div>
+        <div class="seg"><span class="t">84–93s</span><img src="keyframes/b2/k5.jpg"><span class="rl">察觉</span><span class="why">车内“那眼神不对劲/没到蓉城卸了这车货”</span></div>
+        <div class="seg"><span class="t">93–112s</span><img src="keyframes/b2/k6.jpg"><span class="rl">备战</span><span class="why">阿娅持枪“大川你这是干嘛/把头缩在仪表盘下面”</span></div>
+        <div class="seg"><span class="t">112–133s</span><img src="keyframes/b2/k8.jpg"><span class="rl">卡点</span><span class="why">峡谷疾驰→伏击爆发→“把他们全剁了”，高潮即停</span></div>
+        <div class="cert2">七段全部落在已验证的证据窗口内；威胁反转要素由“盗猎者密谋”承接（与咖妃卡的喜剧硬切同构不同情绪）；反差要素降级替代并已在 matches.json 声明。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="warnbox">完整过程文件（剪辑计划、对照报告）随站点一并归档。本页成片为方法验证试剪，不构成投放效果承诺。</div>
+</div>
+
+<footer><div class="wrap">拉片复刻 · 套用实战 · 2026-10-13</div></footer>
+</body>
+</html>

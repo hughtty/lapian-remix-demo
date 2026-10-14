@@ -1,0 +1,185 @@
+{
+  "schema": "jingpu.edit-plan/1",
+  "id": "variant-b1",
+  "size": [
+    720,
+    1280
+  ],
+  "assets": [
+    {
+      "id": "A",
+      "file": "../inputs/A.mp4",
+      "sha256": "71b7bf953fb8ce2f6136c5637567bb2c2a96d04add27be354d76c703ac756e32"
+    },
+    {
+      "id": "B1a",
+      "file": "../inputs/B1a.mp4",
+      "sha256": "6cacae346eb313eef5e822317fa2d792c76bdafe7d2c13333a0b5b0835e92562"
+    },
+    {
+      "id": "B1b",
+      "file": "../inputs/B1b.mp4",
+      "sha256": "b14d5830fa94e197ca5e0c43879ddf181d60559395b769b4f9cc4993e16c07a1"
+    },
+    {
+      "id": "B1c",
+      "file": "../inputs/B1c.mp4",
+      "sha256": "2147570a0a0f60e534402f6d37387f13bd0026599c9838e91a9f0b7f30540f1c"
+    }
+  ],
+  "readings": [
+    {
+      "file": "../analyses/A.json"
+    },
+    {
+      "file": "../analyses/B1a.json"
+    },
+    {
+      "file": "../analyses/B1b.json"
+    },
+    {
+      "file": "../analyses/B1c.json"
+    }
+  ],
+  "cuts": [
+    {
+      "asset": "B1a",
+      "start": 0,
+      "end": 8,
+      "evidence": "b1a-o01",
+      "reason": "钩子：自述+过马路立预期，第3秒车祸硬切穿越"
+    },
+    {
+      "asset": "B1a",
+      "start": 8,
+      "end": 16,
+      "evidence": "b1a-o02",
+      "reason": "苏醒与淹死回忆（B自身正叙）"
+    },
+    {
+      "asset": "B1a",
+      "start": 16,
+      "end": 31,
+      "evidence": "b1a-o03",
+      "reason": "解释通道：宝塔记忆+出院子（金手指到账）"
+    },
+    {
+      "asset": "B1a",
+      "start": 31,
+      "end": 42,
+      "evidence": "b1a-o04",
+      "reason": "亲情锚：母亲扑炕痛哭"
+    },
+    {
+      "asset": "B1a",
+      "start": 44,
+      "end": 58,
+      "evidence": "b1a-o05",
+      "reason": "亲情锚：九姐自责痛哭"
+    },
+    {
+      "asset": "B1a",
+      "start": 88,
+      "end": 103,
+      "evidence": "b1a-o06",
+      "reason": "轻喜调节：换衣避嫌，母姐出门"
+    },
+    {
+      "asset": "B1b",
+      "start": 0,
+      "end": 33,
+      "evidence": "b1b-o01",
+      "reason": "金手指实证：药田瀑布+灵泉水"
+    },
+    {
+      "asset": "B1b",
+      "start": 33,
+      "end": 53,
+      "evidence": "b1b-o02",
+      "reason": "九层悬念（B自身时序：空间中前段）"
+    },
+    {
+      "asset": "B1c",
+      "start": 0,
+      "end": 13,
+      "evidence": "b1c-o01",
+      "reason": "出空间后在家没种子→挖枸杞树得活根"
+    },
+    {
+      "asset": "B1c",
+      "start": 13,
+      "end": 41,
+      "evidence": "b1c-o02",
+      "reason": "种入宝塔空间+作弊神器+浇灵泉水"
+    },
+    {
+      "asset": "B1c",
+      "start": 41,
+      "end": 66.467,
+      "evidence": "b1c-o03",
+      "reason": "回家喝粥，B自身亲情收束"
+    }
+  ],
+  "adopted": [
+    {
+      "element": "e-hook-expect",
+      "rule": "前3秒以现代日常立预期",
+      "referenceAsset": "A",
+      "referenceEvidence": "a01",
+      "targetAsset": "B1a",
+      "targetEvidence": "b1a-o01",
+      "fit": "fit"
+    },
+    {
+      "element": "e-hook-cut",
+      "rule": "反转点车祸硬切",
+      "referenceAsset": "A",
+      "referenceEvidence": "a02",
+      "targetAsset": "B1a",
+      "targetEvidence": "b1a-o01",
+      "fit": "fit"
+    },
+    {
+      "element": "e-hook-explain",
+      "rule": "反转后5秒内给穿越解释",
+      "referenceAsset": "A",
+      "referenceEvidence": "a02",
+      "targetAsset": "B1a",
+      "targetEvidence": "b1a-o03",
+      "fit": "fit"
+    },
+    {
+      "element": "e-rhythm",
+      "rule": "按≈1.6秒/镜保持快节奏",
+      "referenceAsset": "A",
+      "referenceEvidence": "a11",
+      "targetAsset": "B1a",
+      "targetEvidence": "b1a-o08",
+      "fit": "fit"
+    },
+    {
+      "element": "e-subtitle",
+      "rule": "保留全程解说字幕",
+      "referenceAsset": "A",
+      "referenceEvidence": "a12",
+      "targetAsset": "B1a",
+      "targetEvidence": "b1a-o09",
+      "fit": "fit"
+    },
+    {
+      "element": "e-contrast",
+      "rule": "以“穿越+作弊神器”替代黑皮喜剧反差",
+      "referenceAsset": "A",
+      "referenceEvidence": "a02",
+      "targetAsset": "B1c",
+      "targetEvidence": "b1c-o02",
+      "fit": "partial"
+    }
+  ],
+  "omitted": [
+    {
+      "element": "e-cliff",
+      "reason": "B1素材唯一悬念节点（九层疑问）位于空间中前段且以“先出去”收束，移至片尾将倒置B自身因果顺序；素材现有收束为亲情喝粥，按保留因果原则省略卡点要素"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schema": "jingpu.edit-plan/1",
+  "id": "variant-b2",
+  "size": [
+    720,
+    1280
+  ],
+  "assets": [
+    {
+      "id": "A",
+      "file": "../inputs/A.mp4",
+      "sha256": "71b7bf953fb8ce2f6136c5637567bb2c2a96d04add27be354d76c703ac756e32"
+    },
+    {
+      "id": "B2a",
+      "file": "../inputs/B2a.mp4",
+      "sha256": "8b74c8049e30e484d39992915dd637ee1ab1ff8849d331a9a01d7a767ca25bef"
+    },
+    {
+      "id": "B2b",
+      "file": "../inputs/B2b.mp4",
+      "sha256": "6ed0cf4e35a2ebb074319665432711bbdf8f1083f8bc19efbd91b5e23c3eb097"
+    }
+  ],
+  "readings": [
+    {
+      "file": "../analyses/A.json"
+    },
+    {
+      "file": "../analyses/B2a.json"
+    },
+    {
+      "file": "../analyses/B2b.json"
+    }
+  ],
+  "cuts": [
+    {
+      "asset": "B2a",
+      "start": 0,
+      "end": 12,
+      "evidence": "b2a-o01",
+      "reason": "立预期：日出卧谈"
+    },
+    {
+      "asset": "B2a",
+      "start": 22,
+      "end": 40,
+      "evidence": "b2a-o02",
+      "reason": "信息钩：接单三个条件"
+    },
+    {
+      "asset": "B2a",
+      "start": 108,
+      "end": 132,
+      "evidence": "b2a-o03",
+      "reason": "入险：破厂房验货点钞"
+    },
+    {
+      "asset": "B2b",
+      "start": 0,
+      "end": 30,
+      "evidence": "b2b-o01",
+      "reason": "威胁反转：盗猎者密谋+眼睛特写"
+    },
+    {
+      "asset": "B2a",
+      "start": 225,
+      "end": 233.792,
+      "evidence": "b2a-o05",
+      "reason": "主角方察觉：那眼神不对劲"
+    },
+    {
+      "asset": "B2b",
+      "start": 33,
+      "end": 52,
+      "evidence": "b2b-o02",
+      "reason": "备战：车内持枪以防万一"
+    },
+    {
+      "asset": "B2b",
+      "start": 55,
+      "end": 76,
+      "evidence": "b2b-o03",
+      "reason": "卡点：黑吃黑判断→峡谷伏击爆发→把他们全剁了"
+    }
+  ],
+  "adopted": [
+    {
+      "element": "e-hook-expect",
+      "rule": "以夫妻卧谈日常立预期",
+      "referenceAsset": "A",
+      "referenceEvidence": "a01",
+      "targetAsset": "B2a",
+      "targetEvidence": "b2a-o01",
+      "fit": "fit"
+    },
+    {
+      "element": "e-hook-cut",
+      "rule": "以盗猎者密谋作威胁反转",
+      "referenceAsset": "A",
+      "referenceEvidence": "a02",
+      "targetAsset": "B2b",
+      "targetEvidence": "b2b-o01",
+      "fit": "fit"
+    },
+    {
+      "element": "e-hook-explain",
+      "rule": "以接单“三个条件”交代处境（信息钩型）",
+      "referenceAsset": "A",
+      "referenceEvidence": "a03",
+      "targetAsset": "B2a",
+      "targetEvidence": "b2a-o02",
+      "fit": "partial"
+    },
+    {
+      "element": "e-rhythm",
+      "rule": "按≈1.6秒/镜保持快节奏",
+      "referenceAsset": "A",
+      "referenceEvidence": "a11",
+      "targetAsset": "B2b",
+      "targetEvidence": "b2b-o04",
+      "fit": "fit"
+    },
+    {
+      "element": "e-subtitle",
+      "rule": "保留全程解说字幕",
+      "referenceAsset": "A",
+      "referenceEvidence": "a12",
+      "targetAsset": "B2a",
+      "targetEvidence": "b2a-o06",
+      "fit": "fit"
+    },
+    {
+      "element": "e-contrast",
+      "rule": "降级替代为“文明生意vs黑吃黑”（情绪由喜转危）",
+      "referenceAsset": "A",
+      "referenceEvidence": "a02",
+      "targetAsset": "B2b",
+      "targetEvidence": "b2b-o01",
+      "fit": "partial"
+    },
+    {
+      "element": "e-cliff",
+      "rule": "爆发高潮即停作卡点",
+      "referenceAsset": "A",
+      "referenceEvidence": "a10",
+      "targetAsset": "B2b",
+      "targetEvidence": "b2b-o03",
+      "fit": "fit"
+    }
+  ],
+  "omitted": []
+}

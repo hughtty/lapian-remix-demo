@@ -1,0 +1,14 @@
+{
+  "file": "video.mp4",
+  "bytes": 26939710,
+  "duration": 132.821333,
+  "width": 720,
+  "height": 1280,
+  "audioPresent": true,
+  "sha256": "61e8d475f507b98d1c07eac59f5b0ccb3eb7f06ea9caf88a87ffef534197204c",
+  "fullDecode": true,
+  "semanticReview": "not-performed",
+  "adPerformance": "not-tested",
+  "plannedDuration": 132.792,
+  "durationWithinTolerance": true
+}

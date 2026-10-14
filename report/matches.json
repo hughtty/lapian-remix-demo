@@ -1,0 +1,96 @@
+{
+  "B1": {
+    "target": "B1a+B1b+B1c（穿越种田剧）",
+    "items": [
+      {
+        "element": "e-hook-expect",
+        "targetEvidence": "b1a-o01",
+        "fit": "fit",
+        "note": "过马路现代日常立预期，同构"
+      },
+      {
+        "element": "e-hook-cut",
+        "targetEvidence": "b1a-o01",
+        "fit": "fit",
+        "note": "第3秒车祸硬切穿越，同构"
+      },
+      {
+        "element": "e-hook-explain",
+        "targetEvidence": "b1a-o03",
+        "fit": "fit",
+        "note": "宝塔记忆+金手指到账作解释通道"
+      },
+      {
+        "element": "e-rhythm",
+        "targetEvidence": "b1a-o08",
+        "fit": "fit",
+        "note": "原片1.68s，≈1.6s模板"
+      },
+      {
+        "element": "e-subtitle",
+        "targetEvidence": "b1a-o09",
+        "fit": "fit",
+        "note": "原片自带解说字幕"
+      },
+      {
+        "element": "e-contrast",
+        "targetEvidence": "b1c-o02",
+        "fit": "partial",
+        "note": "黑皮喜剧反差→替代为“穿越+作弊神器”秒懂反差"
+      },
+      {
+        "element": "e-cliff",
+        "targetEvidence": null,
+        "fit": "omitted",
+        "note": "B1唯一悬念节点（九层疑问）位于空间中前段且以“先出去”收束，移至片尾将倒置B自身因果；素材收束为亲情喝粥，按保留因果原则省略"
+      }
+    ]
+  },
+  "B2": {
+    "target": "B2a+B2b（高原枪战剧）",
+    "items": [
+      {
+        "element": "e-hook-expect",
+        "targetEvidence": "b2a-o01",
+        "fit": "fit",
+        "note": "夫妻卧谈日常立预期"
+      },
+      {
+        "element": "e-hook-cut",
+        "targetEvidence": "b2b-o01",
+        "fit": "fit",
+        "note": "密谋“尸体往峡谷一推”作威胁反转"
+      },
+      {
+        "element": "e-hook-explain",
+        "targetEvidence": "b2a-o02",
+        "fit": "partial",
+        "note": "接单“三个条件”交代处境，信息钩型解释通道"
+      },
+      {
+        "element": "e-rhythm",
+        "targetEvidence": "b2b-o04",
+        "fit": "fit",
+        "note": "本段1.63s"
+      },
+      {
+        "element": "e-subtitle",
+        "targetEvidence": "b2a-o06",
+        "fit": "fit",
+        "note": "原片自带"
+      },
+      {
+        "element": "e-contrast",
+        "targetEvidence": "b2b-o01",
+        "fit": "partial",
+        "note": "喜剧反差→降级替代为“文明生意vs黑吃黑”（情绪由喜转危，明说）"
+      },
+      {
+        "element": "e-cliff",
+        "targetEvidence": "b2b-o03",
+        "fit": "fit",
+        "note": "伏击爆发高潮即停，天然卡点"
+      }
+    ]
+  }
+}

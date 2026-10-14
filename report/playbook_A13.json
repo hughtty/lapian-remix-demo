@@ -1,0 +1,65 @@
+{
+  "playbook_id": "LP-A13-20261013",
+  "version": "v1",
+  "created_at": "2026-10-13",
+  "source": {
+    "channel": "ADX 短剧大盘素材 Top100（近30天）",
+    "adx_rank": 13,
+    "material_id": 549856882,
+    "drama": "陛下天天被咖妃肘击",
+    "exposure_estimate": 750000000,
+    "days_live": 324,
+    "first_seen": "2025-07-08",
+    "engagement": { "likes": 401, "comments": 1480, "shares": 324 },
+    "media": "抖音",
+    "caveat": "收录与解析不构成投放效果承诺"
+  },
+  "material_profile": {
+    "file": "A13_陛下天天被咖妃肘击.mp4",
+    "sha256": "71b7bf953fb8ce2f6136c5637567bb2c2a96d04add27be354d76c703ac756e32",
+    "duration_s": 255.95,
+    "resolution": "1080x1920",
+    "fps": 30,
+    "form": "解说式剧情切片（旁白字幕驱动的 recap montage）",
+    "shot_cuts": 158,
+    "avg_shot_len_s": 1.62,
+    "audio": { "mean_volume_db": -11.5, "max_volume_db": 0.0, "music_mood": "unresolved_needs_audio_model" }
+  },
+  "hook": {
+    "window": "0-6s",
+    "type": "预期建立→硬切反转→解释通道",
+    "steps": [
+      { "t": "0.0-0.9", "shot": "白皙美女大特写", "subtitle": "女孩原本有着绝世容颜", "function": "立预期" },
+      { "t": "0.9", "shot": "硬切黑脸女子大特写", "subtitle": "这风吹日晒的", "function": "秒反转" },
+      { "t": "0.9-6", "shot": "黑脸特写持续", "subtitle": "抹黑粉里多年", "function": "解释通道+立人设" },
+      { "t": "6-10", "shot": "选秀群像+咧嘴笑", "subtitle": "乡下长大", "function": "处境与性格落地" }
+    ],
+    "transferable": true
+  },
+  "groups": [
+    { "id": "G1", "span": "0:00-0:48", "arc": "人设反差建立", "beats": "绝世容颜→黑脸反转→被嫌粗俗→心机女安排陪衬→身份闪回→被迫再选秀" },
+    { "id": "G2", "span": "0:48-1:36", "arc": "名场面·一句话封妃", "beats": "像亡妻→OS三连→黑美对话→逐客→真高兴→当朕的女人→抗旨梗", "peak": true },
+    { "id": "G3", "span": "1:36-2:24", "arc": "代价与危机", "beats": "欺君风险→全宫关注→夜走十几后宫喜剧段→落难真爱钩子" },
+    { "id": "G4", "span": "2:24-3:12", "arc": "深情闪回+反派作死", "beats": "和离书被撕→同甘共苦→抗旨打扮被禁足→只剩最后一殿" },
+    { "id": "G5", "span": "3:12-4:16", "arc": "陷害与踹门", "beats": "粉盒做手脚→绑刺客→粉将尽→闯殿→踹门对视→未完待续", "cliffhanger": true }
+  ],
+  "craft_rules": [
+    { "id": "R1", "dim": "节奏", "rule": "平均镜头1.6s；开场第一镜≤1s；对话反应镜2-3s", "level": "direct" },
+    { "id": "R2", "dim": "画面", "rule": "特写/近景为主，反转点必须硬切无转场", "level": "direct" },
+    { "id": "R3", "dim": "字幕", "rule": "全程解说字幕白字黑边置中下，每镜1-2行随切镜换句", "level": "direct" },
+    { "id": "R4", "dim": "收尾", "rule": "掐在秘密将揭未揭瞬间+大字未完待续", "level": "direct" },
+    { "id": "R5", "dim": "时长", "rule": "解说切片体甜区4-8分钟", "level": "direct" },
+    { "id": "R6", "dim": "钩子", "rule": "1s立预期→第1秒硬切反转→5s内给自洽解释；反差点必须1秒可视", "level": "adapt" }
+  ],
+  "adoption": {
+    "direct": ["R1", "R2", "R3", "R4", "R5"],
+    "adapt": [{ "rule": "R6", "note": "把黑皮反差替换为目标剧最强的一秒可视反差点" }],
+    "content_only": ["咖妃选妃剧情", "当朕的女人", "踹门梗"]
+  },
+  "evidence": {
+    "shot_boundaries": "frames/shots.txt",
+    "contact_sheets": ["frames/sheet_01.jpg", "frames/sheet_02.jpg", "frames/sheet_03.jpg", "frames/sheet_04.jpg", "frames/sheet_05.jpg", "frames/sheet_06.jpg"],
+    "keyframes_dir": "webui/keyframes/",
+    "audio_limits": "仅响度级检测，曲风需音频模型复核"
+  }
+}
