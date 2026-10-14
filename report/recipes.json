@@ -1,0 +1,44 @@
+[
+  {
+    "id": "R1-hook-3step",
+    "name": "钩子三段式",
+    "relation": "sequence",
+    "members": [
+      "e-hook-expect",
+      "e-hook-cut",
+      "e-hook-explain"
+    ],
+    "apply": "1秒内立预期→第1秒硬切反转→5秒内给解释；反差点一秒可视",
+    "condition": "任何有直观反差点的素材"
+  },
+  {
+    "id": "R2-cliff",
+    "name": "悬念卡点",
+    "relation": "single",
+    "members": [
+      "e-cliff"
+    ],
+    "apply": "成片最后一镜停在将揭未揭瞬间",
+    "condition": "素材存在未收束的核心悬念"
+  },
+  {
+    "id": "R3-rhythm",
+    "name": "1.6s快节奏",
+    "relation": "single",
+    "members": [
+      "e-rhythm"
+    ],
+    "apply": "平均镜头≈1.6秒，特写优先",
+    "condition": "素材镜头充足"
+  },
+  {
+    "id": "R4-subtitle",
+    "name": "全程解说字幕",
+    "relation": "single",
+    "members": [
+      "e-subtitle"
+    ],
+    "apply": "白字黑边中下随切换句",
+    "condition": "原片自带或可配字幕"
+  }
+]

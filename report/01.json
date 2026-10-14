@@ -8,37 +8,37 @@
   "assets": [
     {
       "id": "A",
-      "file": "../inputs/A.mp4",
+      "file": "../../../lapian-kimi-legacy/videos/A13_陛下天天被咖妃肘击.mp4",
       "sha256": "71b7bf953fb8ce2f6136c5637567bb2c2a96d04add27be354d76c703ac756e32"
     },
     {
       "id": "B1a",
-      "file": "../inputs/B1a.mp4",
+      "file": "../../../session_1007fba0-afd5-4e8b-a507-406f78d7fa52/media/f_9b378bc8-9e8e-4666-9a0c-69c48a638b83.mp4",
       "sha256": "6cacae346eb313eef5e822317fa2d792c76bdafe7d2c13333a0b5b0835e92562"
     },
     {
       "id": "B1b",
-      "file": "../inputs/B1b.mp4",
+      "file": "../../../session_1007fba0-afd5-4e8b-a507-406f78d7fa52/media/f_71a3cf9d-2331-4f63-8d78-7f7e24d34cf3.mp4",
       "sha256": "b14d5830fa94e197ca5e0c43879ddf181d60559395b769b4f9cc4993e16c07a1"
     },
     {
       "id": "B1c",
-      "file": "../inputs/B1c.mp4",
+      "file": "../../../session_1007fba0-afd5-4e8b-a507-406f78d7fa52/media/f_a7458548-f27c-40bd-85a8-5d2bbd229179.mp4",
       "sha256": "2147570a0a0f60e534402f6d37387f13bd0026599c9838e91a9f0b7f30540f1c"
     }
   ],
   "readings": [
     {
-      "file": "../analyses/A.json"
+      "file": "readings/00.json"
     },
     {
-      "file": "../analyses/B1a.json"
+      "file": "readings/01.json"
     },
     {
-      "file": "../analyses/B1b.json"
+      "file": "readings/02.json"
     },
     {
-      "file": "../analyses/B1c.json"
+      "file": "readings/03.json"
     }
   ],
   "cuts": [

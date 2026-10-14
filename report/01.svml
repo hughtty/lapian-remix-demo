@@ -1,0 +1,26 @@
+<video schema="jingpu.output/1" id="variant-b1" duration="190.46699999999998">
+  <sequence order="output">
+    <segment asset="B1a" start="0" end="8" output-start="0" output-end="8" evidence="b1a-o01" original-audio="true">钩子：自述+过马路立预期，第3秒车祸硬切穿越</segment>
+    <segment asset="B1a" start="8" end="16" output-start="8" output-end="16" evidence="b1a-o02" original-audio="true">苏醒与淹死回忆（B自身正叙）</segment>
+    <segment asset="B1a" start="16" end="31" output-start="16" output-end="31" evidence="b1a-o03" original-audio="true">解释通道：宝塔记忆+出院子（金手指到账）</segment>
+    <segment asset="B1a" start="31" end="42" output-start="31" output-end="42" evidence="b1a-o04" original-audio="true">亲情锚：母亲扑炕痛哭</segment>
+    <segment asset="B1a" start="44" end="58" output-start="42" output-end="56" evidence="b1a-o05" original-audio="true">亲情锚：九姐自责痛哭</segment>
+    <segment asset="B1a" start="88" end="103" output-start="56" output-end="71" evidence="b1a-o06" original-audio="true">轻喜调节：换衣避嫌，母姐出门</segment>
+    <segment asset="B1b" start="0" end="33" output-start="71" output-end="104" evidence="b1b-o01" original-audio="true">金手指实证：药田瀑布+灵泉水</segment>
+    <segment asset="B1b" start="33" end="53" output-start="104" output-end="124" evidence="b1b-o02" original-audio="true">九层悬念（B自身时序：空间中前段）</segment>
+    <segment asset="B1c" start="0" end="13" output-start="124" output-end="137" evidence="b1c-o01" original-audio="true">出空间后在家没种子→挖枸杞树得活根</segment>
+    <segment asset="B1c" start="13" end="41" output-start="137" output-end="165" evidence="b1c-o02" original-audio="true">种入宝塔空间+作弊神器+浇灵泉水</segment>
+    <segment asset="B1c" start="41" end="66.467" output-start="165" output-end="190.467" evidence="b1c-o03" original-audio="true">回家喝粥，B自身亲情收束</segment>
+  </sequence>
+  <adopted>
+    <element element="e-hook-expect" fit="fit" referenceAsset="A" referenceEvidence="a01" targetAsset="B1a" targetEvidence="b1a-o01">前3秒以现代日常立预期</element>
+    <element element="e-hook-cut" fit="fit" referenceAsset="A" referenceEvidence="a02" targetAsset="B1a" targetEvidence="b1a-o01">反转点车祸硬切</element>
+    <element element="e-hook-explain" fit="fit" referenceAsset="A" referenceEvidence="a02" targetAsset="B1a" targetEvidence="b1a-o03">反转后5秒内给穿越解释</element>
+    <element element="e-rhythm" fit="fit" referenceAsset="A" referenceEvidence="a11" targetAsset="B1a" targetEvidence="b1a-o08">按≈1.6秒/镜保持快节奏</element>
+    <element element="e-subtitle" fit="fit" referenceAsset="A" referenceEvidence="a12" targetAsset="B1a" targetEvidence="b1a-o09">保留全程解说字幕</element>
+    <element element="e-contrast" fit="partial" referenceAsset="A" referenceEvidence="a02" targetAsset="B1c" targetEvidence="b1c-o02">以“穿越+作弊神器”替代黑皮喜剧反差</element>
+  </adopted>
+  <omitted>
+    <element id="e-cliff">B1素材唯一悬念节点（九层疑问）位于空间中前段且以“先出去”收束，移至片尾将倒置B自身因果顺序；素材现有收束为亲情喝粥，按保留因果原则省略卡点要素</element>
+  </omitted>
+</video>

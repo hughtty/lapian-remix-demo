@@ -1,0 +1,21 @@
+<video schema="jingpu.output/1" id="variant-b2" duration="132.792">
+  <sequence order="output">
+    <segment asset="B2a" start="0" end="12" output-start="0" output-end="12" evidence="b2a-o01" original-audio="true">立预期：日出卧谈</segment>
+    <segment asset="B2a" start="22" end="40" output-start="12" output-end="30" evidence="b2a-o02" original-audio="true">信息钩：接单三个条件</segment>
+    <segment asset="B2a" start="108" end="132" output-start="30" output-end="54" evidence="b2a-o03" original-audio="true">入险：破厂房验货点钞</segment>
+    <segment asset="B2b" start="0" end="30" output-start="54" output-end="84" evidence="b2b-o01" original-audio="true">威胁反转：盗猎者密谋+眼睛特写</segment>
+    <segment asset="B2a" start="225" end="233.792" output-start="84" output-end="92.792" evidence="b2a-o05" original-audio="true">主角方察觉：那眼神不对劲</segment>
+    <segment asset="B2b" start="33" end="52" output-start="92.792" output-end="111.792" evidence="b2b-o02" original-audio="true">备战：车内持枪以防万一</segment>
+    <segment asset="B2b" start="55" end="76" output-start="111.792" output-end="132.792" evidence="b2b-o03" original-audio="true">卡点：黑吃黑判断→峡谷伏击爆发→把他们全剁了</segment>
+  </sequence>
+  <adopted>
+    <element element="e-hook-expect" fit="fit" referenceAsset="A" referenceEvidence="a01" targetAsset="B2a" targetEvidence="b2a-o01">以夫妻卧谈日常立预期</element>
+    <element element="e-hook-cut" fit="fit" referenceAsset="A" referenceEvidence="a02" targetAsset="B2b" targetEvidence="b2b-o01">以盗猎者密谋作威胁反转</element>
+    <element element="e-hook-explain" fit="partial" referenceAsset="A" referenceEvidence="a03" targetAsset="B2a" targetEvidence="b2a-o02">以接单“三个条件”交代处境（信息钩型）</element>
+    <element element="e-rhythm" fit="fit" referenceAsset="A" referenceEvidence="a11" targetAsset="B2b" targetEvidence="b2b-o04">按≈1.6秒/镜保持快节奏</element>
+    <element element="e-subtitle" fit="fit" referenceAsset="A" referenceEvidence="a12" targetAsset="B2a" targetEvidence="b2a-o06">保留全程解说字幕</element>
+    <element element="e-contrast" fit="partial" referenceAsset="A" referenceEvidence="a02" targetAsset="B2b" targetEvidence="b2b-o01">降级替代为“文明生意vs黑吃黑”（情绪由喜转危）</element>
+    <element element="e-cliff" fit="fit" referenceAsset="A" referenceEvidence="a10" targetAsset="B2b" targetEvidence="b2b-o03">爆发高潮即停作卡点</element>
+  </adopted>
+  <omitted />
+</video>

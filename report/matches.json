@@ -1,6 +1,6 @@
 {
   "B1": {
-    "target": "B1a+B1b+B1c（穿越种田剧）",
+    "target": "B1a+B1b+B1c（穿越种田剧《穿越60我有空间不愁吃喝》）",
     "items": [
       {
         "element": "e-hook-expect",
@@ -24,7 +24,7 @@
         "element": "e-rhythm",
         "targetEvidence": "b1a-o08",
         "fit": "fit",
-        "note": "原片1.68s，≈1.6s模板"
+        "note": "原片1.76s，≈1.6s模板"
       },
       {
         "element": "e-subtitle",
@@ -47,7 +47,7 @@
     ]
   },
   "B2": {
-    "target": "B2a+B2b（高原枪战剧）",
+    "target": "B2a+B2b（高原枪战剧《彪悍人生：从制霸高原开始2》）",
     "items": [
       {
         "element": "e-hook-expect",
